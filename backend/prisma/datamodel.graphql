@@ -6,7 +6,7 @@ type User {
 }
 
 type Account {
-  id ID! @unique
+  id: ID! @unique
   user: User
 }
 
@@ -23,7 +23,7 @@ type Category {
 }
 
 type Record {
-  id ID! @unique
+  id: ID! @unique
   user: User!
   account: Account!
   category: Category!
